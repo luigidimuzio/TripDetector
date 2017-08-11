@@ -1,31 +1,34 @@
 //
-//  VisitTracker.swift
+//  RegionTracker.swift
 //  TripDetector
 //
-//  Created by Luigi Di Muzio on 10/08/2017.
+//  Created by Luigi Di Muzio on 11/08/2017.
 //  Copyright © 2017 WeSwap. All rights reserved.
 //
+
+import Foundation
 
 import Foundation
 import CoreLocation
 
 
-protocol VisitTrackerDelegate: class {
-    func didTrackVisit(_ visit: Visit)
+
+protocol RegionTrackerDelegate: class {
+    func didDetectExitFromRegion()
 }
 
-class VisitTracker: NSObject {
+class RegionTracker: NSObject {
     
-    static let shared = VisitTracker()
+    static let shared = RegionTracker()
     
     fileprivate let locationManager: CLLocationManager
-    weak var delegate: VisitTrackerDelegate?
+    weak var delegate: RegionTrackerDelegate?
     
     override init() {
         locationManager = CLLocationManager()
         locationManager.activityType = .other
         locationManager.pausesLocationUpdatesAutomatically = true
-
+        
         super.init()
         locationManager.delegate = self
     }
@@ -36,7 +39,7 @@ class VisitTracker: NSObject {
         locationManager.requestAlwaysAuthorization()
     }
     
-    func startTrackingVisits() throws {
+    func startTrackingRegion(region: CLRegion) throws {
         switch CLLocationManager.authorizationStatus() {
         case .denied:
             throw LocationTrackingError.authorizationDenied
@@ -45,7 +48,7 @@ class VisitTracker: NSObject {
         case .restricted:
             throw LocationTrackingError.other
         case .authorizedAlways:
-            locationManager.startMonitoringVisits()
+            locationManager.startMonitoring(for: Region)
             isTrackingVisits = true
         default:
             return
@@ -53,19 +56,18 @@ class VisitTracker: NSObject {
     }
 }
 
-extension VisitTracker: CLLocationManagerDelegate {
+extension RegionTracker: CLLocationManagerDelegate {
     
-    func locationManager(_ manager: CLLocationManager, didVisit visit: CLVisit) {
-        let trackedVisit = Visit(clVisit: visit)
-        delegate?.didTrackVisit(trackedVisit)
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        delegate?.didDetectExitFromRegion()
     }
     
     func locationManager(_ manager: CLLocationManager,  didFailWithError error: Error) {
-//        if let error = error as? NSError, error.code == .denied {
-//            // Location updates are not authorized.
-//            locationManager.stopMonitoringVisits()
-//            return
-//        }
+        //        if let error = error as? NSError, error.code == .denied {
+        //            // Location updates are not authorized.
+        //            locationManager.stopMonitoringVisits()
+        //            return
+        //        }
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {

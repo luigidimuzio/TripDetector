@@ -30,11 +30,11 @@ class ViewController: UITableViewController {
         if !visitTracker.isTrackingVisits {
             do {
                 try visitTracker.startTrackingVisits()
-            } catch VisitTrackingError.authorizationDenied {
+            } catch LocationTrackingError.authorizationDenied {
                 // user previously denied access to location.
                 // gently bring him to settings to change the authorization
                 print("User denied access to location services")
-            } catch VisitTrackingError.missingAuthorization {
+            } catch LocationTrackingError.missingAuthorization {
                 // we should require authorization to the user
                 visitTracker.askAuthorization()
             } catch {
