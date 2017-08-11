@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FDEADC3F89EEBF355F27233 /* Pods_TripDetectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5574E69A030EC7A9C6F8905 /* Pods_TripDetectorUITests.framework */; };
+		6576DB93C884FF56D0CA802F /* Pods_TripDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0774949F44E902FC1681C4F8 /* Pods_TripDetector.framework */; };
+		A96135351F3DB7C1000AC707 /* VisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96135341F3DB7C1000AC707 /* VisitCell.swift */; };
+		A9FD55451F3CBA4100D1B8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55441F3CBA4100D1B8BA /* AppDelegate.swift */; };
+		A9FD55471F3CBA4100D1B8BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55461F3CBA4100D1B8BA /* ViewController.swift */; };
+		A9FD554A1F3CBA4100D1B8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FD55481F3CBA4100D1B8BA /* Main.storyboard */; };
+		A9FD554C1F3CBA4100D1B8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FD554B1F3CBA4100D1B8BA /* Assets.xcassets */; };
+		A9FD554F1F3CBA4100D1B8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FD554D1F3CBA4100D1B8BA /* LaunchScreen.storyboard */; };
+		A9FD555A1F3CBA4100D1B8BA /* TripDetectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55591F3CBA4100D1B8BA /* TripDetectorTests.swift */; };
+		A9FD55651F3CBA4100D1B8BA /* TripDetectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55641F3CBA4100D1B8BA /* TripDetectorUITests.swift */; };
+		A9FD55731F3CBACB00D1B8BA /* VisitTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55721F3CBACB00D1B8BA /* VisitTracker.swift */; };
+		A9FD55751F3CC0C600D1B8BA /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55741F3CC0C600D1B8BA /* Visit.swift */; };
+		A9FD55771F3CC1F200D1B8BA /* VisitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55761F3CC1F200D1B8BA /* VisitStore.swift */; };
+		AA7D91AE146B747AB0FBA123 /* Pods_TripDetectorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B45915114D42205831DEBC /* Pods_TripDetectorTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9FD55561F3CBA4100D1B8BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9FD55391F3CBA4100D1B8BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9FD55401F3CBA4100D1B8BA;
+			remoteInfo = TripDetector;
+		};
+		A9FD55611F3CBA4100D1B8BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9FD55391F3CBA4100D1B8BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9FD55401F3CBA4100D1B8BA;
+			remoteInfo = TripDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0774949F44E902FC1681C4F8 /* Pods_TripDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B45915114D42205831DEBC /* Pods_TripDetectorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDetectorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		536638CF361CBA6EF3917FA5 /* Pods-TripDetectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetectorUITests/Pods-TripDetectorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7FD99469653CFA230BA7D44C /* Pods-TripDetectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetectorTests/Pods-TripDetectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		888D996C5E106F10C1ACF811 /* Pods-TripDetectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetectorTests/Pods-TripDetectorTests.release.xcconfig"; sourceTree = "<group>"; };
+		A96135341F3DB7C1000AC707 /* VisitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitCell.swift; sourceTree = "<group>"; };
+		A9FD55411F3CBA4100D1B8BA /* TripDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FD55441F3CBA4100D1B8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9FD55461F3CBA4100D1B8BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9FD55491F3CBA4100D1B8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9FD554B1F3CBA4100D1B8BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9FD554E1F3CBA4100D1B8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9FD55501F3CBA4100D1B8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9FD55551F3CBA4100D1B8BA /* TripDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FD55591F3CBA4100D1B8BA /* TripDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetectorTests.swift; sourceTree = "<group>"; };
+		A9FD555B1F3CBA4100D1B8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9FD55601F3CBA4100D1B8BA /* TripDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FD55641F3CBA4100D1B8BA /* TripDetectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetectorUITests.swift; sourceTree = "<group>"; };
+		A9FD55661F3CBA4100D1B8BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9FD55721F3CBACB00D1B8BA /* VisitTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitTracker.swift; sourceTree = "<group>"; };
+		A9FD55741F3CC0C600D1B8BA /* Visit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
+		A9FD55761F3CC1F200D1B8BA /* VisitStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitStore.swift; sourceTree = "<group>"; };
+		B312D86878FD0B9049326B2B /* Pods-TripDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetector/Pods-TripDetector.release.xcconfig"; sourceTree = "<group>"; };
+		D5892B9143015DE0122B3429 /* Pods-TripDetectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetectorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetectorUITests/Pods-TripDetectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2600088ECDD117A2F1F9136 /* Pods-TripDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetector/Pods-TripDetector.debug.xcconfig"; sourceTree = "<group>"; };
+		F5574E69A030EC7A9C6F8905 /* Pods_TripDetectorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripDetectorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9FD553E1F3CBA4100D1B8BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6576DB93C884FF56D0CA802F /* Pods_TripDetector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FD55521F3CBA4100D1B8BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7D91AE146B747AB0FBA123 /* Pods_TripDetectorTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FD555D1F3CBA4100D1B8BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FDEADC3F89EEBF355F27233 /* Pods_TripDetectorUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		376B48EB6D6A636288039025 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0774949F44E902FC1681C4F8 /* Pods_TripDetector.framework */,
+				16B45915114D42205831DEBC /* Pods_TripDetectorTests.framework */,
+				F5574E69A030EC7A9C6F8905 /* Pods_TripDetectorUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8063B8B7BBD9F55396AA8915 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2600088ECDD117A2F1F9136 /* Pods-TripDetector.debug.xcconfig */,
+				B312D86878FD0B9049326B2B /* Pods-TripDetector.release.xcconfig */,
+				7FD99469653CFA230BA7D44C /* Pods-TripDetectorTests.debug.xcconfig */,
+				888D996C5E106F10C1ACF811 /* Pods-TripDetectorTests.release.xcconfig */,
+				D5892B9143015DE0122B3429 /* Pods-TripDetectorUITests.debug.xcconfig */,
+				536638CF361CBA6EF3917FA5 /* Pods-TripDetectorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9FD55381F3CBA4100D1B8BA = {
+			isa = PBXGroup;
+			children = (
+				A9FD55431F3CBA4100D1B8BA /* TripDetector */,
+				A9FD55581F3CBA4100D1B8BA /* TripDetectorTests */,
+				A9FD55631F3CBA4100D1B8BA /* TripDetectorUITests */,
+				A9FD55421F3CBA4100D1B8BA /* Products */,
+				8063B8B7BBD9F55396AA8915 /* Pods */,
+				376B48EB6D6A636288039025 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9FD55421F3CBA4100D1B8BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9FD55411F3CBA4100D1B8BA /* TripDetector.app */,
+				A9FD55551F3CBA4100D1B8BA /* TripDetectorTests.xctest */,
+				A9FD55601F3CBA4100D1B8BA /* TripDetectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9FD55431F3CBA4100D1B8BA /* TripDetector */ = {
+			isa = PBXGroup;
+			children = (
+				A9FD55441F3CBA4100D1B8BA /* AppDelegate.swift */,
+				A9FD55461F3CBA4100D1B8BA /* ViewController.swift */,
+				A9FD55741F3CC0C600D1B8BA /* Visit.swift */,
+				A96135341F3DB7C1000AC707 /* VisitCell.swift */,
+				A9FD55721F3CBACB00D1B8BA /* VisitTracker.swift */,
+				A9FD55761F3CC1F200D1B8BA /* VisitStore.swift */,
+				A9FD55481F3CBA4100D1B8BA /* Main.storyboard */,
+				A9FD554B1F3CBA4100D1B8BA /* Assets.xcassets */,
+				A9FD554D1F3CBA4100D1B8BA /* LaunchScreen.storyboard */,
+				A9FD55501F3CBA4100D1B8BA /* Info.plist */,
+			);
+			path = TripDetector;
+			sourceTree = "<group>";
+		};
+		A9FD55581F3CBA4100D1B8BA /* TripDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9FD55591F3CBA4100D1B8BA /* TripDetectorTests.swift */,
+				A9FD555B1F3CBA4100D1B8BA /* Info.plist */,
+			);
+			path = TripDetectorTests;
+			sourceTree = "<group>";
+		};
+		A9FD55631F3CBA4100D1B8BA /* TripDetectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9FD55641F3CBA4100D1B8BA /* TripDetectorUITests.swift */,
+				A9FD55661F3CBA4100D1B8BA /* Info.plist */,
+			);
+			path = TripDetectorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9FD55401F3CBA4100D1B8BA /* TripDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FD55691F3CBA4100D1B8BA /* Build configuration list for PBXNativeTarget "TripDetector" */;
+			buildPhases = (
+				95865136408396D7D240DCCD /* [CP] Check Pods Manifest.lock */,
+				A9FD553D1F3CBA4100D1B8BA /* Sources */,
+				A9FD553E1F3CBA4100D1B8BA /* Frameworks */,
+				A9FD553F1F3CBA4100D1B8BA /* Resources */,
+				339252F9624EB14BBA24F081 /* [CP] Embed Pods Frameworks */,
+				FBFE5ED1E3E21E597F65635A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TripDetector;
+			productName = TripDetector;
+			productReference = A9FD55411F3CBA4100D1B8BA /* TripDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9FD55541F3CBA4100D1B8BA /* TripDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FD556C1F3CBA4100D1B8BA /* Build configuration list for PBXNativeTarget "TripDetectorTests" */;
+			buildPhases = (
+				0CC4CBFE5A92B29CED48E1B8 /* [CP] Check Pods Manifest.lock */,
+				A9FD55511F3CBA4100D1B8BA /* Sources */,
+				A9FD55521F3CBA4100D1B8BA /* Frameworks */,
+				A9FD55531F3CBA4100D1B8BA /* Resources */,
+				60B306364486A4A9EFF531FE /* [CP] Embed Pods Frameworks */,
+				76F80A9BAB3A45A4EFA9B922 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9FD55571F3CBA4100D1B8BA /* PBXTargetDependency */,
+			);
+			name = TripDetectorTests;
+			productName = TripDetectorTests;
+			productReference = A9FD55551F3CBA4100D1B8BA /* TripDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9FD555F1F3CBA4100D1B8BA /* TripDetectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FD556F1F3CBA4100D1B8BA /* Build configuration list for PBXNativeTarget "TripDetectorUITests" */;
+			buildPhases = (
+				6C0B0BFE30035A5E53C2195F /* [CP] Check Pods Manifest.lock */,
+				A9FD555C1F3CBA4100D1B8BA /* Sources */,
+				A9FD555D1F3CBA4100D1B8BA /* Frameworks */,
+				A9FD555E1F3CBA4100D1B8BA /* Resources */,
+				E79BC5D85943ADB8FBA456F4 /* [CP] Embed Pods Frameworks */,
+				B942B06588328E2EC06D16CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9FD55621F3CBA4100D1B8BA /* PBXTargetDependency */,
+			);
+			name = TripDetectorUITests;
+			productName = TripDetectorUITests;
+			productReference = A9FD55601F3CBA4100D1B8BA /* TripDetectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9FD55391F3CBA4100D1B8BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = WeSwap;
+				TargetAttributes = {
+					A9FD55401F3CBA4100D1B8BA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7XUX4CGUHC;
+						ProvisioningStyle = Automatic;
+					};
+					A9FD55541F3CBA4100D1B8BA = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9FD55401F3CBA4100D1B8BA;
+					};
+					A9FD555F1F3CBA4100D1B8BA = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9FD55401F3CBA4100D1B8BA;
+					};
+				};
+			};
+			buildConfigurationList = A9FD553C1F3CBA4100D1B8BA /* Build configuration list for PBXProject "TripDetector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9FD55381F3CBA4100D1B8BA;
+			productRefGroup = A9FD55421F3CBA4100D1B8BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9FD55401F3CBA4100D1B8BA /* TripDetector */,
+				A9FD55541F3CBA4100D1B8BA /* TripDetectorTests */,
+				A9FD555F1F3CBA4100D1B8BA /* TripDetectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9FD553F1F3CBA4100D1B8BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FD554F1F3CBA4100D1B8BA /* LaunchScreen.storyboard in Resources */,
+				A9FD554C1F3CBA4100D1B8BA /* Assets.xcassets in Resources */,
+				A9FD554A1F3CBA4100D1B8BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FD55531F3CBA4100D1B8BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FD555E1F3CBA4100D1B8BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CC4CBFE5A92B29CED48E1B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		339252F9624EB14BBA24F081 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripDetector/Pods-TripDetector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60B306364486A4A9EFF531FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripDetectorTests/Pods-TripDetectorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C0B0BFE30035A5E53C2195F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		76F80A9BAB3A45A4EFA9B922 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripDetectorTests/Pods-TripDetectorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95865136408396D7D240DCCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B942B06588328E2EC06D16CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripDetectorUITests/Pods-TripDetectorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E79BC5D85943ADB8FBA456F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripDetectorUITests/Pods-TripDetectorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBFE5ED1E3E21E597F65635A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripDetector/Pods-TripDetector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9FD553D1F3CBA4100D1B8BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FD55471F3CBA4100D1B8BA /* ViewController.swift in Sources */,
+				A96135351F3DB7C1000AC707 /* VisitCell.swift in Sources */,
+				A9FD55751F3CC0C600D1B8BA /* Visit.swift in Sources */,
+				A9FD55771F3CC1F200D1B8BA /* VisitStore.swift in Sources */,
+				A9FD55451F3CBA4100D1B8BA /* AppDelegate.swift in Sources */,
+				A9FD55731F3CBACB00D1B8BA /* VisitTracker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FD55511F3CBA4100D1B8BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FD555A1F3CBA4100D1B8BA /* TripDetectorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FD555C1F3CBA4100D1B8BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FD55651F3CBA4100D1B8BA /* TripDetectorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9FD55571F3CBA4100D1B8BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9FD55401F3CBA4100D1B8BA /* TripDetector */;
+			targetProxy = A9FD55561F3CBA4100D1B8BA /* PBXContainerItemProxy */;
+		};
+		A9FD55621F3CBA4100D1B8BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9FD55401F3CBA4100D1B8BA /* TripDetector */;
+			targetProxy = A9FD55611F3CBA4100D1B8BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9FD55481F3CBA4100D1B8BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9FD55491F3CBA4100D1B8BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9FD554D1F3CBA4100D1B8BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9FD554E1F3CBA4100D1B8BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9FD55671F3CBA4100D1B8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9FD55681F3CBA4100D1B8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9FD556A1F3CBA4100D1B8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2600088ECDD117A2F1F9136 /* Pods-TripDetector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7XUX4CGUHC;
+				INFOPLIST_FILE = TripDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weswap.TripDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A9FD556B1F3CBA4100D1B8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B312D86878FD0B9049326B2B /* Pods-TripDetector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7XUX4CGUHC;
+				INFOPLIST_FILE = TripDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weswap.TripDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A9FD556D1F3CBA4100D1B8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FD99469653CFA230BA7D44C /* Pods-TripDetectorTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TripDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weswap.TripDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripDetector.app/TripDetector";
+			};
+			name = Debug;
+		};
+		A9FD556E1F3CBA4100D1B8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 888D996C5E106F10C1ACF811 /* Pods-TripDetectorTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TripDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weswap.TripDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripDetector.app/TripDetector";
+			};
+			name = Release;
+		};
+		A9FD55701F3CBA4100D1B8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5892B9143015DE0122B3429 /* Pods-TripDetectorUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TripDetectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weswap.TripDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TripDetector;
+			};
+			name = Debug;
+		};
+		A9FD55711F3CBA4100D1B8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 536638CF361CBA6EF3917FA5 /* Pods-TripDetectorUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TripDetectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.weswap.TripDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TripDetector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9FD553C1F3CBA4100D1B8BA /* Build configuration list for PBXProject "TripDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FD55671F3CBA4100D1B8BA /* Debug */,
+				A9FD55681F3CBA4100D1B8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9FD55691F3CBA4100D1B8BA /* Build configuration list for PBXNativeTarget "TripDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FD556A1F3CBA4100D1B8BA /* Debug */,
+				A9FD556B1F3CBA4100D1B8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9FD556C1F3CBA4100D1B8BA /* Build configuration list for PBXNativeTarget "TripDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FD556D1F3CBA4100D1B8BA /* Debug */,
+				A9FD556E1F3CBA4100D1B8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9FD556F1F3CBA4100D1B8BA /* Build configuration list for PBXNativeTarget "TripDetectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FD55701F3CBA4100D1B8BA /* Debug */,
+				A9FD55711F3CBA4100D1B8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9FD55391F3CBA4100D1B8BA /* Project object */;
+}
