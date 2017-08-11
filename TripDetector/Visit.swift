@@ -18,7 +18,7 @@ class Coordinate: Object {
 class Visit: Object {
     dynamic var arrivalDate = Date()
     dynamic var departureDate = Date()
-    dynamic var coordinate = Coordinate()
+    dynamic var coordinate: Coordinate?
 }
 
 extension Visit {
@@ -27,7 +27,23 @@ extension Visit {
         self.init()
         arrivalDate = clVisit.arrivalDate
         departureDate = clVisit.departureDate
-        coordinate.lat = clVisit.coordinate.latitude
-        coordinate.lng = clVisit.coordinate.longitude
+        coordinate = Coordinate()
+        coordinate?.lat = clVisit.coordinate.latitude
+        coordinate?.lng = clVisit.coordinate.longitude
+    }
+    
+    var coordinatesString: String {
+        guard let lat = coordinate?.lat, let lng = coordinate?.lng else {
+            return "N/A"
+        }
+        return "\(lat), \(lng)"
+    }
+    
+    var stayingDatesString: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        
+        return "\(dateFormatter.string(from: arrivalDate))-\(dateFormatter.string(from: departureDate))"
     }
 }

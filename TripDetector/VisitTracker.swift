@@ -29,8 +29,10 @@ protocol VisitTrackerDelegate: class {
 
 class VisitTracker: NSObject {
     
+    static let shared = VisitTracker()
+    
     fileprivate let locationManager: CLLocationManager
-    fileprivate weak var delegate: VisitTrackerDelegate?
+    weak var delegate: VisitTrackerDelegate?
     
     override init() {
         locationManager = CLLocationManager()
@@ -71,7 +73,6 @@ class VisitTracker: NSObject {
 extension VisitTracker: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didVisit visit: CLVisit) {
-        //HANDLE THE VISIT
         let trackedVisit = Visit(clVisit: visit)
         delegate?.didTrackVisit(trackedVisit)
     }

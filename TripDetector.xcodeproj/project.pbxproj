@@ -10,6 +10,7 @@
 		0FDEADC3F89EEBF355F27233 /* Pods_TripDetectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5574E69A030EC7A9C6F8905 /* Pods_TripDetectorUITests.framework */; };
 		6576DB93C884FF56D0CA802F /* Pods_TripDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0774949F44E902FC1681C4F8 /* Pods_TripDetector.framework */; };
 		A96135351F3DB7C1000AC707 /* VisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96135341F3DB7C1000AC707 /* VisitCell.swift */; };
+		A9DCFF601F3DDEAD001BB893 /* VisitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9DCFF5F1F3DDEAD001BB893 /* VisitCell.xib */; };
 		A9FD55451F3CBA4100D1B8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55441F3CBA4100D1B8BA /* AppDelegate.swift */; };
 		A9FD55471F3CBA4100D1B8BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55461F3CBA4100D1B8BA /* ViewController.swift */; };
 		A9FD554A1F3CBA4100D1B8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FD55481F3CBA4100D1B8BA /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		7FD99469653CFA230BA7D44C /* Pods-TripDetectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetectorTests/Pods-TripDetectorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		888D996C5E106F10C1ACF811 /* Pods-TripDetectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetectorTests/Pods-TripDetectorTests.release.xcconfig"; sourceTree = "<group>"; };
 		A96135341F3DB7C1000AC707 /* VisitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitCell.swift; sourceTree = "<group>"; };
+		A9DCFF5F1F3DDEAD001BB893 /* VisitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitCell.xib; sourceTree = "<group>"; };
 		A9FD55411F3CBA4100D1B8BA /* TripDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FD55441F3CBA4100D1B8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9FD55461F3CBA4100D1B8BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				A9FD55461F3CBA4100D1B8BA /* ViewController.swift */,
 				A9FD55741F3CC0C600D1B8BA /* Visit.swift */,
 				A96135341F3DB7C1000AC707 /* VisitCell.swift */,
+				A9DCFF5F1F3DDEAD001BB893 /* VisitCell.xib */,
 				A9FD55721F3CBACB00D1B8BA /* VisitTracker.swift */,
 				A9FD55761F3CC1F200D1B8BA /* VisitStore.swift */,
 				A9FD55481F3CBA4100D1B8BA /* Main.storyboard */,
@@ -256,6 +259,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 7XUX4CGUHC;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					A9FD55541F3CBA4100D1B8BA = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -295,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9FD554F1F3CBA4100D1B8BA /* LaunchScreen.storyboard in Resources */,
+				A9DCFF601F3DDEAD001BB893 /* VisitCell.xib in Resources */,
 				A9FD554C1F3CBA4100D1B8BA /* Assets.xcassets in Resources */,
 				A9FD554A1F3CBA4100D1B8BA /* Main.storyboard in Resources */,
 			);

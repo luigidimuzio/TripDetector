@@ -7,11 +7,22 @@
 //
 
 import UIKit
+import RealmSwift
 
-class ViewController: UIViewController {
 
-    let visitTracker = VisitTracker()
+class ViewController: UITableViewController {
+
+    let visitTracker = VisitTracker.shared
     let visitStore = VisitStore()
+    
+    var visits: Results<Visit> {
+        return visitStore.allVisits()
+    }
+    
+    override func viewDidLoad() {
+        tableView.register(UINib(nibName: "VisitCell", bundle: nil), forCellReuseIdentifier: "VisitCell")
+        tableView.rowHeight = 80
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super .viewWillAppear(animated)
@@ -31,6 +42,22 @@ class ViewController: UIViewController {
                 print("generic error")
             }
         }
+    }
+    
+    // MARK: TableView DataSource
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return visits.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "VisitCell", for: indexPath)
+        if let cell = cell as? VisitCell {
+            let visit = visits[indexPath.row]
+            cell.locationCoordinateLabel.text = visit.coordinatesString
+            cell.locationStayLabel.text = visit.stayingDatesString
+        }
+        return cell
     }
     
 }
