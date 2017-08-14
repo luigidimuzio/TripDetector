@@ -48,7 +48,7 @@ class RegionTracker: NSObject {
         case .restricted:
             throw LocationTrackingError.other
         case .authorizedAlways:
-            locationManager.startMonitoring(for: Region)
+            locationManager.startMonitoring(for: region)
             isTrackingVisits = true
         default:
             return

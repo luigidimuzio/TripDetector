@@ -19,6 +19,23 @@ class Visit: Object {
     dynamic var arrivalDate = Date()
     dynamic var departureDate = Date()
     dynamic var coordinate: Coordinate?
+    dynamic var place: Place?
+}
+
+class Place: Object {
+    dynamic var name: String?
+    dynamic var city: String?
+    dynamic var country: String?
+    dynamic var address: String?
+    
+    convenience init(placemark: CLPlacemark) {
+        self.init()
+        name = placemark.name
+        city = placemark.locality
+        country = placemark.locality
+        address = placemark.thoroughfare
+    }
+
 }
 
 extension Visit {

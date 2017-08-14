@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0FDEADC3F89EEBF355F27233 /* Pods_TripDetectorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5574E69A030EC7A9C6F8905 /* Pods_TripDetectorUITests.framework */; };
 		6576DB93C884FF56D0CA802F /* Pods_TripDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0774949F44E902FC1681C4F8 /* Pods_TripDetector.framework */; };
+		A95CABBB1F419BFB007891C5 /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CABBA1F419BFB007891C5 /* Geocoder.swift */; };
 		A96135351F3DB7C1000AC707 /* VisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96135341F3DB7C1000AC707 /* VisitCell.swift */; };
 		A9DCFF601F3DDEAD001BB893 /* VisitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9DCFF5F1F3DDEAD001BB893 /* VisitCell.xib */; };
 		A9DCFF631F3E14FD001BB893 /* RegionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DCFF621F3E14FD001BB893 /* RegionTracker.swift */; };
@@ -51,6 +52,7 @@
 		536638CF361CBA6EF3917FA5 /* Pods-TripDetectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetectorUITests/Pods-TripDetectorUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7FD99469653CFA230BA7D44C /* Pods-TripDetectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetectorTests/Pods-TripDetectorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		888D996C5E106F10C1ACF811 /* Pods-TripDetectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetectorTests/Pods-TripDetectorTests.release.xcconfig"; sourceTree = "<group>"; };
+		A95CABBA1F419BFB007891C5 /* Geocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
 		A96135341F3DB7C1000AC707 /* VisitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitCell.swift; sourceTree = "<group>"; };
 		A9DCFF5F1F3DDEAD001BB893 /* VisitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitCell.xib; sourceTree = "<group>"; };
 		A9DCFF621F3E14FD001BB893 /* RegionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionTracker.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				A9DCFF6A1F3E1814001BB893 /* TODO.md */,
 				A9FD55441F3CBA4100D1B8BA /* AppDelegate.swift */,
 				A9FD55461F3CBA4100D1B8BA /* ViewController.swift */,
+				A95CABBA1F419BFB007891C5 /* Geocoder.swift */,
 				A9DCFF671F3E16AD001BB893 /* LocationTrackingError.swift */,
 				A9DCFF661F3E156C001BB893 /* Visit */,
 				A9DCFF691F3E16CE001BB893 /* Region */,
@@ -501,6 +504,7 @@
 				A96135351F3DB7C1000AC707 /* VisitCell.swift in Sources */,
 				A9DCFF631F3E14FD001BB893 /* RegionTracker.swift in Sources */,
 				A9DCFF6B1F3E1814001BB893 /* TODO.md in Sources */,
+				A95CABBB1F419BFB007891C5 /* Geocoder.swift in Sources */,
 				A9DCFF651F3E155E001BB893 /* Region.swift in Sources */,
 				A9FD55751F3CC0C600D1B8BA /* Visit.swift in Sources */,
 				A9FD55771F3CC1F200D1B8BA /* VisitStore.swift in Sources */,

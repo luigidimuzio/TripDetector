@@ -13,13 +13,14 @@ import RealmSwift
 class ViewController: UITableViewController {
 
     let visitTracker = VisitTracker.shared
-    let visitStore = VisitStore()
+    var visitStore: VisitStore!
     
     var visits: Results<Visit> {
         return visitStore.allVisits()
     }
     
     override func viewDidLoad() {
+        visitStore = VisitStore()
         tableView.register(UINib(nibName: "VisitCell", bundle: nil), forCellReuseIdentifier: "VisitCell")
         tableView.rowHeight = 80
     }
@@ -54,7 +55,8 @@ class ViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "VisitCell", for: indexPath)
         if let cell = cell as? VisitCell {
             let visit = visits[indexPath.row]
-            cell.locationCoordinateLabel.text = visit.coordinatesString
+            let title = visit.place?.name ?? visit.place?.address ?? visit.coordinatesString
+            cell.locationCoordinateLabel.text = title
             cell.locationStayLabel.text = visit.stayingDatesString
         }
         return cell

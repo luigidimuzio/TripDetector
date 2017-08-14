@@ -12,6 +12,24 @@ import RealmSwift
 class VisitStore {
     
     let realm = try! Realm()
+    let geocoder = Geocoder()
+    
+    init() {
+        updateVisits()
+    }
+    
+    private func updateVisits() {
+        let visits = allVisits()
+        for visit in visits {
+            if visit.place == nil, let coordinate = visit.coordinate {
+                geocoder.getPlace(from: coordinate) { [weak self] place in
+                    try! self?.realm.write {
+                        visit.place = place
+                    }
+                }
+            }
+        }
+    }
     
     func allVisits() -> Results<Visit> {
         let visits = realm.objects(Visit.self)
