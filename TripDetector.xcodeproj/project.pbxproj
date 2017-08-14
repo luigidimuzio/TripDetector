@@ -11,13 +11,14 @@
 		6576DB93C884FF56D0CA802F /* Pods_TripDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0774949F44E902FC1681C4F8 /* Pods_TripDetector.framework */; };
 		A95CABBB1F419BFB007891C5 /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95CABBA1F419BFB007891C5 /* Geocoder.swift */; };
 		A96135351F3DB7C1000AC707 /* VisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96135341F3DB7C1000AC707 /* VisitCell.swift */; };
+		A9B399931F41ACA1005E481F /* VisitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B399921F41ACA1005E481F /* VisitDetailViewController.swift */; };
 		A9DCFF601F3DDEAD001BB893 /* VisitCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9DCFF5F1F3DDEAD001BB893 /* VisitCell.xib */; };
 		A9DCFF631F3E14FD001BB893 /* RegionTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DCFF621F3E14FD001BB893 /* RegionTracker.swift */; };
 		A9DCFF651F3E155E001BB893 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DCFF641F3E155E001BB893 /* Region.swift */; };
 		A9DCFF681F3E16AD001BB893 /* LocationTrackingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DCFF671F3E16AD001BB893 /* LocationTrackingError.swift */; };
 		A9DCFF6B1F3E1814001BB893 /* TODO.md in Sources */ = {isa = PBXBuildFile; fileRef = A9DCFF6A1F3E1814001BB893 /* TODO.md */; };
 		A9FD55451F3CBA4100D1B8BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55441F3CBA4100D1B8BA /* AppDelegate.swift */; };
-		A9FD55471F3CBA4100D1B8BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55461F3CBA4100D1B8BA /* ViewController.swift */; };
+		A9FD55471F3CBA4100D1B8BA /* VisitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FD55461F3CBA4100D1B8BA /* VisitsViewController.swift */; };
 		A9FD554A1F3CBA4100D1B8BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FD55481F3CBA4100D1B8BA /* Main.storyboard */; };
 		A9FD554C1F3CBA4100D1B8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9FD554B1F3CBA4100D1B8BA /* Assets.xcassets */; };
 		A9FD554F1F3CBA4100D1B8BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9FD554D1F3CBA4100D1B8BA /* LaunchScreen.storyboard */; };
@@ -54,6 +55,7 @@
 		888D996C5E106F10C1ACF811 /* Pods-TripDetectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripDetectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripDetectorTests/Pods-TripDetectorTests.release.xcconfig"; sourceTree = "<group>"; };
 		A95CABBA1F419BFB007891C5 /* Geocoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
 		A96135341F3DB7C1000AC707 /* VisitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitCell.swift; sourceTree = "<group>"; };
+		A9B399921F41ACA1005E481F /* VisitDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitDetailViewController.swift; sourceTree = "<group>"; };
 		A9DCFF5F1F3DDEAD001BB893 /* VisitCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitCell.xib; sourceTree = "<group>"; };
 		A9DCFF621F3E14FD001BB893 /* RegionTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionTracker.swift; sourceTree = "<group>"; };
 		A9DCFF641F3E155E001BB893 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 		A9DCFF6A1F3E1814001BB893 /* TODO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 		A9FD55411F3CBA4100D1B8BA /* TripDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FD55441F3CBA4100D1B8BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9FD55461F3CBA4100D1B8BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9FD55461F3CBA4100D1B8BA /* VisitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitsViewController.swift; sourceTree = "<group>"; };
 		A9FD55491F3CBA4100D1B8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9FD554B1F3CBA4100D1B8BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9FD554E1F3CBA4100D1B8BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -180,7 +182,8 @@
 			children = (
 				A9DCFF6A1F3E1814001BB893 /* TODO.md */,
 				A9FD55441F3CBA4100D1B8BA /* AppDelegate.swift */,
-				A9FD55461F3CBA4100D1B8BA /* ViewController.swift */,
+				A9FD55461F3CBA4100D1B8BA /* VisitsViewController.swift */,
+				A9B399921F41ACA1005E481F /* VisitDetailViewController.swift */,
 				A95CABBA1F419BFB007891C5 /* Geocoder.swift */,
 				A9DCFF671F3E16AD001BB893 /* LocationTrackingError.swift */,
 				A9DCFF661F3E156C001BB893 /* Visit */,
@@ -499,9 +502,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9FD55471F3CBA4100D1B8BA /* ViewController.swift in Sources */,
+				A9FD55471F3CBA4100D1B8BA /* VisitsViewController.swift in Sources */,
 				A9DCFF681F3E16AD001BB893 /* LocationTrackingError.swift in Sources */,
 				A96135351F3DB7C1000AC707 /* VisitCell.swift in Sources */,
+				A9B399931F41ACA1005E481F /* VisitDetailViewController.swift in Sources */,
 				A9DCFF631F3E14FD001BB893 /* RegionTracker.swift in Sources */,
 				A9DCFF6B1F3E1814001BB893 /* TODO.md in Sources */,
 				A95CABBB1F419BFB007891C5 /* Geocoder.swift in Sources */,

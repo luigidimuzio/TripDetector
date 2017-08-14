@@ -62,6 +62,20 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let visitVC = segue.destination as? VisitDetailViewController,
+            let visit = sender as? Visit {
+            visitVC.visit = visit
+        }
+    }
+    
+    //MARK: TableView Delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let visit = visits[indexPath.row]
+        performSegue(withIdentifier: "goToVisitDetail", sender: visit)
+    }
+    
 }
 
 extension ViewController: VisitTrackerDelegate {

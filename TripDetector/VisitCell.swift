@@ -13,4 +13,9 @@ class VisitCell: UITableViewCell {
     @IBOutlet weak var locationStayLabel: UILabel!
     @IBOutlet weak var locationNameLabel: UILabel!
     @IBOutlet weak var locationCoordinateLabel: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.accessoryType = .disclosureIndicator
+    }
 }

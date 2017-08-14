@@ -32,7 +32,7 @@ class Place: Object {
         self.init()
         name = placemark.name
         city = placemark.locality
-        country = placemark.locality
+        country = placemark.country
         address = placemark.thoroughfare
     }
 
