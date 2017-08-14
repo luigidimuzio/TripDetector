@@ -33,13 +33,24 @@ class RegionTracker: NSObject {
         locationManager.delegate = self
     }
     
-    var isTrackingVisits: Bool = false
+    var isMonitoringRegions: Bool = false
+    
+    var currentUserCoordinate: Coordinate {
+        let coordinate = Coordinate()
+        coordinate.lat = locationManager.location?.coordinate.latitude ?? 0
+        coordinate.lng = locationManager.location?.coordinate.longitude ?? 0
+        return coordinate
+    }
     
     func askAuthorization() {
         locationManager.requestAlwaysAuthorization()
     }
     
-    func startTrackingRegion(region: CLRegion) throws {
+    func startTrackingRegion(region: Region) throws {
+        
+        let centerCoordinate = CLLocationCoordinate2DMake(region.center?.lat ?? 0, region.center?.lng ?? 0)
+        let circularRegion = CLCircularRegion(center: centerCoordinate, radius: region.radius, identifier: "tracking-region")
+
         switch CLLocationManager.authorizationStatus() {
         case .denied:
             throw LocationTrackingError.authorizationDenied
@@ -48,11 +59,19 @@ class RegionTracker: NSObject {
         case .restricted:
             throw LocationTrackingError.other
         case .authorizedAlways:
-            locationManager.startMonitoring(for: region)
-            isTrackingVisits = true
+            locationManager.startMonitoring(for: circularRegion)
+            isMonitoringRegions = true
         default:
             return
         }
+    }
+    
+    func stopTrackingRegions() {
+        let regions = locationManager.monitoredRegions
+        regions.forEach { (region) in
+            locationManager.stopMonitoring(for: region)
+        }
+        isMonitoringRegions = false
     }
 }
 

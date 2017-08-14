@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Visits-->
         <scene sceneID="FDe-wd-Nv5">
             <objects>
-                <tableViewController id="HJ7-6W-2go" customClass="ViewController" customModule="TripDetector" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="HJ7-6W-2go" customClass="VisitsViewController" customModule="TripDetector" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dWv-Tz-Lk3">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,7 +196,7 @@
         <!--Region Monitoring-->
         <scene sceneID="Ubz-Qs-blq">
             <objects>
-                <viewController id="fqD-Hh-7KZ" sceneMemberID="viewController">
+                <viewController id="fqD-Hh-7KZ" customClass="RegionMonitoringViewController" customModule="TripDetector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N8k-bo-eKw"/>
                         <viewControllerLayoutGuide type="bottom" id="Zjy-Qr-Jow"/>
@@ -203,9 +204,25 @@
                     <view key="view" contentMode="scaleToFill" id="BP7-oG-g66">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hOf-sf-F0z">
+                                <rect key="frame" x="20" y="40" width="335" height="335"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hOf-sf-F0z" secondAttribute="height" id="v80-AP-fBB"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hOf-sf-F0z" secondAttribute="trailing" constant="20" id="6gI-kU-6Lb"/>
+                            <constraint firstItem="hOf-sf-F0z" firstAttribute="leading" secondItem="BP7-oG-g66" secondAttribute="leading" constant="20" id="6ou-cU-ejN"/>
+                            <constraint firstItem="hOf-sf-F0z" firstAttribute="top" secondItem="N8k-bo-eKw" secondAttribute="bottom" constant="40" id="Npd-gP-874"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Region Monitoring" id="waS-UJ-RY9"/>
+                    <connections>
+                        <outlet property="mapView" destination="hOf-sf-F0z" id="r3l-lU-4WT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C5z-OR-RHD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

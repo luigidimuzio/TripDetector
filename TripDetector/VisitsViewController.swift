@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 
-class ViewController: UITableViewController {
+class VisitsViewController: UITableViewController {
 
     let visitTracker = VisitTracker.shared
     var visitStore: VisitStore!
@@ -78,7 +78,7 @@ class ViewController: UITableViewController {
     
 }
 
-extension ViewController: VisitTrackerDelegate {
+extension VisitsViewController: VisitTrackerDelegate {
     func didTrackVisit(_ visit: Visit) {
         visitStore.addVisit(visit)
     }

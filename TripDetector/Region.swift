@@ -7,9 +7,28 @@
 //
 
 import Foundation
+import RealmSwift
 import CoreLocation
+import MapKit
 
-struct Region {
-    let center: CLLocation
-    let radius: Double
+class Region: Object {
+    dynamic var center: Coordinate? = Coordinate()
+    dynamic var radius: Double = 20
+    dynamic var isCurrent: Bool = false
+    
+    func contains(coordinate: Coordinate) -> Bool {
+        if self.toCLCircularRegion().contains(coordinate.toCLCoordinate()) {
+            return true
+        }
+        return false
+    }
+    
+    func toMKCircle() -> MKCircle {
+        let coordinate = center?.toCLCoordinate()
+        return MKCircle(center: coordinate!, radius: radius)
+    }
+    
+    func toCLCircularRegion() -> CLCircularRegion {
+        return CLCircularRegion(center: center!.toCLCoordinate(), radius: radius, identifier: "")
+    }
 }

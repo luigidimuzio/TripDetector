@@ -9,10 +9,15 @@
 import Foundation
 import RealmSwift
 import CoreLocation
+import MapKit
 
 class Coordinate: Object {
     dynamic var lat: Double = 0
     dynamic var lng: Double = 0
+    
+    func toCLCoordinate() -> CLLocationCoordinate2D {
+        return CLLocationCoordinate2DMake(lat, lng)
+    }
 }
 
 class Visit: Object {

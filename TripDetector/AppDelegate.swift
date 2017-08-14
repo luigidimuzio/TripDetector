@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         visitTracker.delegate = self
         handleRealmMigration()
         visitStore = VisitStore()
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+        
         return true
     }
     
